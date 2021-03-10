@@ -35,4 +35,6 @@ class VendorTest < Minitest::Test
     assert_equal expected3, vendor.inventory
   end
 
+
+
 end
