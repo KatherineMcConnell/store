@@ -1,7 +1,6 @@
 class Market
-  attr_reader :name
-
-  attr_accessor :vendors
+  attr_reader :name,
+              :vendors
 
   def initialize(name)
     @name = name
@@ -17,4 +16,15 @@ class Market
       vendor.name
     end
   end
+
+  # def vendors_that_sell(item_name)
+  #   vendors_selling = []
+  #   @vendors.each do |vendor|
+  #     if vendor.stock.includes(item_name)
+  #     vendors_selling << vendor
+  #     end
+  #   end
+  #   vendors_selling
+  # end
+
 end
